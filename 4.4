@@ -1,0 +1,70 @@
+Algoritmo sueldo_empleado
+	Escribir "Ingrese horas extra trabajadas";
+	Leer horasextra;
+	Si (horasextra>=1 Y horasextra<=3) Entonces
+		horasextra=2.000;
+	SiNo
+		Si (horasextra>=4 Y horasextra<=7) Entonces
+			horasextra=3.000;
+		SiNo
+			Si(horasextra>7) Entonces
+				horasextra=3.500;
+			SiNo
+				Si(horasextra=0) Entonces
+					horasextra=0;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	Escribir "Ingrese grado";
+				Leer grado;
+				Si (grado=1) Entonces
+					grado=450.000;
+				SiNo
+					Si (grado=2) Entonces
+						grado=550.000;
+					Sino 
+						Si (grado=3) Entonces
+							grado=700.000;
+						FinSi
+					FinSi
+				FinSi
+				sueldoSinDsc<- grado+horasextra;
+				Escribir "Ingrese ISAPRE";
+				Leer isapre;
+				Si (isapre=1) Entonces
+					isapre= (sueldoSinDsc*6.5)/100;
+				SiNo
+					Si (isapre=2) Entonces
+						isapre= (sueldoSinDsc*7.3)/100;
+					Sino 
+						Si (isapre=3) Entonces
+							isapre= (sueldoSinDsc*7.0)/100;
+						SiNo
+							Si (isapre=4) Entonces
+								isapre= (sueldoSinDsc*7.0)/100;
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+				Escribir "Ingresar AFP";
+				Leer afp;
+				Si (afp=1) Entonces
+					afp= (sueldoSinDsc*12)/100;
+				SiNo
+					Si (afp=2) Entonces
+						afp= (sueldoSinDsc*13.4)/100;
+					SiNo
+						Si (afp=3) Entonces
+							afp= (sueldoSinDsc*12.3)/100;
+						SiNo
+							Si (afp=4) Entonces
+								afp= (sueldoSinDsc*12.9)/100;
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+				sueldoTotal<- sueldoSinDsc-isapre-afp;
+				Escribir "El sueldo del empleado es: ", sueldoTotal; 
+				
+FinAlgoritmo

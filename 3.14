@@ -1,0 +1,20 @@
+Algoritmo tresamigos
+	
+	
+	Escribir "Ingrese dinero aportado por el primer amigo";
+	Leer am1;
+	Escribir "Ingrese dinero aportado por el segundo amigo";
+	Leer am2;
+	Escribir "Ingrese dinero aportado por el tercer amigo";
+	Leer am3;
+	
+	pc1<- (am1*(am1+am2+am3))/100;
+	pc2<- (am2*(am1+am2+am3))/100;
+	pc3<- (am3*(am1+am2+am3))/100;
+	
+	Escribir "Porcentaje aportado por el primer amigo ", pc1;
+	Escribir "Porcentaje aportado por el segundo amigo ", pc2;
+	Escribir "Porcentaje aportado por el segundo amigo ", pc3;
+	
+	
+FinAlgoritmo

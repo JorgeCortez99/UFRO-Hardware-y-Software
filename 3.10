@@ -1,0 +1,26 @@
+Algoritmo asignatura
+	
+	Escribir "Ingresar número de aprobados";
+	Leer ap;
+	Escribir "Ingresar número de reprobados";
+	Leer rp;
+	Escribir "Ingresar número de alumnos notables";
+	Leer not;
+	Escribir "Ingresar número de alumnos sobresalientes";
+	Leer so;
+	
+	total<- ap+rp+not+so;
+	pa<- (ap*total)/100;
+	pr<- (rp*total)/100;
+	pnot<- (not*total)/100;
+	pso<- (so*total)/100;
+	
+	Escribir "Porcentaje de alumnos aprobados ", pa;
+	Escribir "Porcentaje de alumnos reprobados ", pr;
+	Escribir "Porcentaje de alumnos notables ", pnot;
+	Escribir "Porcentaje de alumnos sobresalientes ", pso;
+	
+	
+	
+	
+FinAlgoritmo

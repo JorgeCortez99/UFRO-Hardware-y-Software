@@ -1,0 +1,18 @@
+Algoritmo clinica
+	
+	Escribir "Ingrese presupuesto de la clínica";
+	Leer pc;
+	
+	kine<- (20*pc)/100;
+	gine<- (25*pc)/100;
+	trau<- (30*pc)/100;
+	pedia<- (25*pc)/100;
+	
+	Escribir "Dinero que recibirá el área de Kinesiología ", kine;
+	Escribir "Dinero que recibirá el área de Ginecología ", gine;
+	Escribir "Dinero que recibirá el área de Traumatología ", trau;
+	Escribir "Dinero que recibirá el área de Pediatría ", pedia;
+	
+	
+	
+FinAlgoritmo
